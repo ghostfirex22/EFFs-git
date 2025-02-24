@@ -30,8 +30,6 @@ function  ComponentStagiaires(){
         setListStagiaires(Stagiaires)
     },[])
 
-
-
     function vider(){
         setStagiaire({
             matricule :0,
@@ -54,6 +52,7 @@ function  ComponentStagiaires(){
         let editedStagiaires = listStagiaires.map((item)=>{
             if(stagiaire.id === item.id){
                 item = {...stagiaire}
+                setStagiaire({...stagiaire,id:item.id})
             }
             return item;
         })
@@ -106,17 +105,11 @@ function  ComponentStagiaires(){
         return listStagiaires.length + 1
     }
 
-    function incrmentre(){
-        let a = 1
-        return a = listStagiaires.length
-    }
-
     function ajouter(){
         if ((stagiaire.moyenne <= 20 && stagiaire.moyenne >= 0) && (stagiaire.codepostal <=20 && stagiaire.codepostal >=0)){
             let findIt = listStagiaires.find((item)=>{
                 return item.matricule == stagiaire.matricule
             })
-
             if (findIt){
                 setError("this matricule is already used")
             }else {

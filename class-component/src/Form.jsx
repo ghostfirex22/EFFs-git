@@ -1,6 +1,5 @@
 import React from "react";
 class Form extends React.Component{
-
     constructor(props){
         super(props);
         this.state = {
@@ -24,11 +23,9 @@ class Form extends React.Component{
             note:0
         }});
     }
-
     save = ()=>{
         this.setState({students:[...this.state.students,this.state.student]})
     }
-
     update = ()=>{
         const updateRow = this.state.students.map((item)=>{
             if (item.id == this.state.student.id ){

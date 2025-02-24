@@ -32,7 +32,7 @@ class Compteur extends Component{
         return (
             <>
                 <h1>{this.state.number}</h1>
-                <button onClick={this.incrementer}> Click</button>
+                <button onClick={this.incrementer}>Click</button>
                 {this.state.number < 3 && <Form/>}
             </>
         )
