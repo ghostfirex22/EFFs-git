@@ -31,8 +31,8 @@ function Facture(){
             return achat.numero == searchDetail
         })
 
-        const totale =  AchatsToCalc.reduce((prevItem)=>{
-            return prevItem + 1;
+        const totale =  AchatsToCalc.reduce((item)=>{
+            return item + 1;
         },0)
 
         setCalctotale(totale)

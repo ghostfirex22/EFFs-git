@@ -2,16 +2,16 @@
 import Compteur from "./Compteur"
 // import Presentation from "./Presentation"
 import Form from "./Form"
-import Stagiaires from "./test"
+// import Stagiaires from "./test"
 
 function App(){
     return(
         <>
             {/* <Presentation nom='ahmed'/> */}
-            {/* <Compteur/> */}
+            <Compteur/>
             {/* <EtudiantForm/> */}
             {/* <Form/> */}
-            <Stagiaires/>
+            {/* <Stagiaires/> */}
         </>
     )
 }

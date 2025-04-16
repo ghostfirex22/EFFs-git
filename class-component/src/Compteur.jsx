@@ -37,7 +37,6 @@ class Compteur extends Component{
             </>
         )
     }
-
 }
 
 export default Compteur

@@ -18,7 +18,6 @@ function achatReducer(state = initialState, action) {
     case "AJOUTER_ACHAT":
         let UpdatedProduits = state.produits.map((item)=>{
           if(action.payload.newAchats.codeProduit == item.codeProduit){
-            console.log("done")
             item.quantite = action.payload.currentQuentite
           }return item
         }
